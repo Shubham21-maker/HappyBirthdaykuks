@@ -1,0 +1,124 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #ff5733;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.welcome-message {
+    font-size: 1.2rem;
+}
+
+/* Countdown Timer Styles */
+.countdown {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#timer {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff5733;
+}
+
+/* Photo Gallery Styles */
+.photo-gallery {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Reason Section Styles */
+.reason {
+    background-color: #ffcccb;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.reason-heading {
+    font-size: 2rem;
+    color: #ff5733;
+}
+
+.reason-text {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Button Reveal */
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #ff5733;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF8C00;
+    box-shadow: 0 0 10px #FF5733;
+    transform: scale(1.1);
+}
+
+/* Heart Cursor Effect */
+body {
+    cursor: url('heart-icon.png'), auto;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes floatHeart {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(0, -50px); }
+}
